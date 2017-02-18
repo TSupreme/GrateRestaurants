@@ -458,3 +458,22 @@ csmall2 {
 	padding-right: 15px;
 	font-size: 18px;
 }
+/*new views css*/
+
+.container_login{
+    margin-top:80px;
+}
+
+.container_register{
+  margin-top:80px;  
+}
+
+.container_preauthentification{
+      margin-top:80px;  
+   margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container_dasbboard{
+    margin-top:80px;   
+}
