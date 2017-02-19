@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="the.grateapp" ng-controller="PropertyController">
+<html lang="en" data-ng-app="the.grateapp" ng-controller="PropertyController">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,9 +26,9 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif]
     
-    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/modernizr.js"></script>-->
   </head>
 
   <body>
@@ -42,13 +42,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Restaurants</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+          <a class="navbar-brand" href="#/" ng-click="SetPage('home')">Restaurants</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-              <li><a href="#/" ng-click="SetPage('home')">HOME</a></li>
-              <li><a href="#/login" ng-click="SetPage('about')">LOGIN</a></li> 
-              <li><a href="#/register" ng-click="SetPage('contact')">REGISTER</a></li> 
+              
+              <li><a href="#/login" class="glyphicon glyphicon-user" ng-click="SetPage('login')">  LOGIN</a></li> 
+              <li><a href="#/register" class="glyphicon glyphicon-log-in" ng-click="SetPage('register')">  REGISTER</a></li> 
           
   
           </ul>
@@ -56,11 +56,12 @@
           
       </div>
     </div>
-    <div ng-include="'home.html'" ng-show="page=='home'"></div>
-    <div ng-include="'login.html'" ng-show="page=='login'"></div>
-    <div ng-include="'register.html'" ng-show="page=='register'"></div> 
-      <div ng-view></div>
-      
+    <div ng-include="'views/home.html'" ng-show="page=='home'"></div>
+    <div ng-include="'views/login.html'" ng-show="page=='login'"></div>
+    <div ng-include="'views/register.html'" ng-show="page=='register'"></div> 
+    <div ng-include="'views/pre_authentification.html'" ng-show="page=='pre_authentification'"></div>  
+     <div ng-include="'views/dashboard.html'" ng-show="page=='dashboard'"></div>  
+
 	
 	<!-- *****************************************************************************************************************
 	 FOOTER
@@ -103,6 +104,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/retina-1.1.0.js"></script>
 	<script src="assets/js/jquery.hoverdir.js"></script>
@@ -110,7 +112,11 @@
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="the.grateapp.js"></script>
 
+   
 
  <!--   <script>
  Portfolio
