@@ -475,5 +475,48 @@ csmall2 {
 }
 
 .container_dasbboard{
-    margin-top:80px;   
+    margin-top:80px; 
+    padding-bottom: 320px;
+    background: white;
+
+    
+}
+
+body {
+    font-family : arial;
+}
+.sidebar {
+    position : absolute;
+    top : 0;
+    left : -160px;;
+    transition : 100ms left;
+}
+#navigation-toggle {
+        position : absolute;
+        left : 160px;
+        background : rgba(3,159,244,.95);
+        color : black;
+        text-decoration : none;
+        padding : 20px;
+}
+.show {
+    left : 0;
+}
+.navigation {
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+.navigation-items a {
+    display : block;
+    background-color : #444;
+    color : black;
+    line-height : 2em;
+    text-decoration : none;
+    padding : 10px 30px;
+    width : 100px;
+
+}
+.navigation-items a:hover {
+    background-color : #222;
 }

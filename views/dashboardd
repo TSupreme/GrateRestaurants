@@ -1,0 +1,109 @@
+<div class="container_dasbboard">
+   
+
+            <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Restaurants
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">View Restaurant</button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    <div class="col-md-4">
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Dishes 
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">View Dishes </button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    <div class="col-md-4">
+                      
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Events
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">Events</button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>  
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Campaigns 
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">Campaigns </button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    <div class="col-md-4">
+                      
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Coupons and Vouchers 
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">Coupons and Vouchers </button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    <div class="col-md-4">
+                      
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Funds
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary btn-lg">Manage Funds</button>
+                               
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    
+                   
+                        <!-- /.panel-body -->
+           
+                    <!-- /.panel -->
+             
+</div>
