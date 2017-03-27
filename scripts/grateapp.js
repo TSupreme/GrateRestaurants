@@ -18,6 +18,8 @@ var module = angular.module('grateapp', ['ngRoute'])
     }
   ])
 
+
+
 .controller('PropertyController', function PhoneListController($scope) 
             {
   
@@ -28,37 +30,11 @@ var module = angular.module('grateapp', ['ngRoute'])
         $scope.page = name;
     };
     
-  $scope.setPorperty = function (property)
-    {
-        $scope.currentProperty = property;
-    };
-})
-    
-.controller('SidebarController', function($scope) 
-            {
-    
-    $scope.state = false;
-    
-    $scope.toggleState = function() {
-        $scope.state = !$scope.state;
-    };
-    
-})
-
-.directive('sidebarDirective', function() {
-    return {
-        link : function(scope, element, attr) {
-            scope.$watch(attr.sidebarDirective, function(newVal) {
-                  if(newVal)
-                  {
-                    element.addClass('show'); 
-                    return;
-                  }
-                  element.removeClass('show');
-            });
-        }
-    };
+  
 });
+    
+
+
     
     
    
