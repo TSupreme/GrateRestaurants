@@ -62,11 +62,21 @@
     <div ng-include="'views/register.html'" ng-show="page=='register'"></div> 
     <div ng-include="'views/pre_authentification.html'" ng-show="page=='pre_authentification'"></div>  
      <div ng-include="'views/dashboard.html'" ng-show="page=='dashboard'"></div>  
- <div ng-include="'views/profile.html'" ng-show="page=='profile'"></div>  
-       <div ng-include="'views/restaurants.html'" ng-show="page=='restaurant'"></div>
-       <div ng-include="'views/restaurant_claim.html'" ng-show="page=='claim_restaurant'"></div>   
-      <div ng-include="'views/restaurant_edit.html'" ng-show="page=='edit_restaurant'"></div>  
-     
+    <div ng-include="'views/profile.html'" ng-show="page=='profile'"></div>  
+       <div ng-include="'views/restaurant/restaurants.html'" ng-show="page=='restaurant'"></div>
+       <div ng-include="'views/restaurant/restaurant_claim.html'" ng-show="page=='claim_restaurant'"></div>   
+      <div ng-include="'views/restaurant/restaurant_edit.html'" ng-show="page=='edit_restaurant'"></div> 
+          <div ng-include="'views/events/events.html'" ng-show="page=='events'"></div> 
+      <div ng-include="'views/campaigns/campaigns.html'" ng-show="page=='campaigns'"></div> 
+         <div ng-include="'views/campaigns/smscampaigns.html'" ng-show="page=='sms_campaign'"></div> 
+         <div ng-include="'views/campaigns/emailcampaigns.html'" ng-show="page=='email_campaign'"></div> 
+         <div ng-include="'views/campaigns/inappcampaigns.html'" ng-show="page=='inapp_campaigns'"></div> 
+         <div ng-include="'views/campaigns/pushcampaigns.html'" ng-show="page=='push_campaigns'"></div> 
+      <div ng-include="'views/pay.html'" ng-show="page=='pay'"></div> 
+       <div ng-include="'views/featured/featured.html'" ng-show="page=='featured'"></div> 
+       <div ng-include="'views/account.html'" ng-show="page=='account'"></div> 
+      
+      
       
 
       

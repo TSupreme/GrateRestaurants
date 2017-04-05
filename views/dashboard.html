@@ -6,12 +6,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/" ng-click="SetPage('home')">Restaurants</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
               
               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-user" ng-click="SetPage('account')">  ACCOUNT</a></li>  
             
           
   
@@ -63,13 +64,33 @@
                       
                                 <div class="panel panel-default">
                         <div class="panel-heading">
+                            Featured
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                            <p>
+                              
+                                 <a href="#/featured" ng-click="SetPage('featured')" class="btn btn-primary btn-lg">View posts</a>
+                            </p>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+    </div>
+    
+
+    <div class="col-md-4">
+                      
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
                             Events
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             
                             <p>
-                                <button type="button" class="btn btn-primary btn-lg">Events</button>
+                              
+                                  <a href="#/events" ng-click="SetPage('events')" class="btn btn-primary btn-lg">Events</a>
                                
                             </p>
                         </div>
@@ -85,8 +106,8 @@
                         <div class="panel-body">
                             
                             <p>
-                                <button type="button" class="btn btn-primary btn-lg">Campaigns </button>
                                
+                                 <a href="#/campaigns" ng-click="SetPage('campaigns')" class="btn btn-primary btn-lg">Campaigns</a>
                             </p>
                         </div>
                         <!-- /.panel-body -->
@@ -109,25 +130,7 @@
                         <!-- /.panel-body -->
                     </div>
     </div>
-    <div class="col-md-4">
-                      
-                                <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Funds
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            
-                            <p>
-                                <button type="button" class="btn btn-primary btn-lg">Manage Funds</button>
-                               
-                            </p>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-    </div>
     
-
                    
                         <!-- /.panel-body -->
            
