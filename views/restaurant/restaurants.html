@@ -7,13 +7,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/" ng-click="SetPage('dashoard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
               
-              <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
-            
+               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
           
   
           </ul>
@@ -38,7 +39,7 @@
                                 <div class="form-group">
                                     <input class="form-control" placeholder="type in restaurant name" name="email" type=""text autofocus>
                                 <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
+                                   
                                      <a href="#/restaurant_claim" ng-click="SetPage('claim_restaurant')" class="btn btn-lg btn-success btn-block">Claim</a>
                                     
                                   
@@ -49,23 +50,35 @@
                     </div>
             </div>
                         
-            <div class="col-md-4 col-md-offset-3 "> 
+            <div class="col-md-4 col-md-offset-1 "> 
                  <div class="panel-heading">
                         <h3 class="panel-title"> Your Restaurant/s </h3>
                         <div class="panel-body">
                         <form role="form">
                             <fieldset>
-                               
+                               <span>Restaurant Name</span>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Restaurant Name" name="rest_name" type="text" id="Rest_Name">
+                                    <output class="form-control" placeholder="Restaurant Name" name="rest_name" type="text" id="Rest_Name">
                                 </div>
+                                        <span>Restaurant Location</span>
                                      <div class="form-group">
-                                    <input class="form-control" placeholder="Restaurant Location" name="rest_ocation" id="rest_location "type="text">
+                                    <output class="form-control" placeholder="Restaurant Location" name="rest_ocation" id="rest_location "type="text">
                                 </div>
-                                     <div class="form-group">
-                                    <input class="form-control" placeholder="Claimed?" name="claimed_status" type="text" id="claim_status">
-                                          <button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
-                            </button>
+                                        <span>Restaurant Claim Status</span>     
+                            
+                                          <div class="form-group">
+                                          
+                                            <label class="radio-inline">
+                                                <output type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="claimed" checked>Claimed
+                                            </label>
+                                            <label class="radio-inline">
+                                                <output type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="pending">Pending 
+                                            </label>
+                                            <label class="radio-inline">
+                                                <output type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="rejected">Rejected
+                                            </label>
+                                        </div>
+                         
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <a href="#/restaurant_edit" ng-click="SetPage('edit_restaurant')" class="btn btn-lg btn-success btn-block">Edit</a>

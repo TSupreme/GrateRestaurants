@@ -12,10 +12,8 @@
           <ul class="nav navbar-nav">
               
               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
-              <li><a href="#/account" class="glyphicon glyphicon-user" ng-click="SetPage('account')">  ACCOUNT</a></li>  
-            
-          
-  
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>      
           </ul>
         </div><!--/.nav-collapse -->
           
@@ -47,14 +45,14 @@
     <div class="col-md-4">
                                 <div class="panel panel-default">
                         <div class="panel-heading">
-                           Dishes 
+                          Dishes and Grate Reviews 
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             
                             <p>
-                                <button type="button" class="btn btn-primary btn-lg" >View Dishes </button>
                                
+                                  <a href="#/grate" ng-click="SetPage('menu_ratings')" class="btn btn-primary btn-lg">View your Dishes and Reviews</a>
                             </p>
                         </div>
                         <!-- /.panel-body -->
@@ -123,7 +121,8 @@
                         <div class="panel-body">
                             
                             <p>
-                                <button type="button" class="btn btn-primary btn-lg">Coupons and Vouchers </button>
+                           
+                                <a href="#/couponsandvouchers" ng-click="SetPage('coupons_vouchers')" class="btn btn-primary btn-lg">Coupons and Vouchers</a>
                                
                             </p>
                         </div>

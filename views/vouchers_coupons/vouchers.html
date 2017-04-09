@@ -13,8 +13,7 @@
           <ul class="nav navbar-nav">
               
               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
-                   <li><a href="#/account " class="glyphicon glyphicon-user" ng-click="SetPage('account')">  ACCOUNT</a></li> 
-            
+             <li><a href="#/account " class="glyphicon glyphicon-user" ng-click="SetPage('account')">  ACCOUNT</a></li> 
           
   
           </ul>
@@ -29,21 +28,23 @@
             <div class="col-md-4 ">
             
                     <div class="panel-heading">
-                        <h3 class="panel-title"> View Current Events</h3>
+                        <h3 class="panel-title"> Search for previous vouchers</h3>
                    
                         <div class="panel-body">
                         <form role="form">
                             <fieldset>
                               
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="event name" name="event name" type="text" id="event_name" autofocus>
-                                            <label>Status</label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">Is Complete?
-                                            </label>
+                                        <span>Type in voucher name</span>
+                                         <div class="form-control">
+                                           <fieldset>
+                                           <a href="#/search" ng-click="SetPage('search_voucher')" class="btn btn-lg btn-success btn-block">Search</a>
+                                </fieldset>
+                                        
+                                </div>
                                        
-                                  
-                                     <a href="#/events_viewmore.html" ng-click="SetPage('view_more')" class="btn btn-primary">View More</a>
+                                 
+                                
                                     
                               
                                 </div>
@@ -54,33 +55,38 @@
                         
             <div class="col-md-4 col-md-offset-1 "> 
                  <div class="panel-heading">
-                        <h3 class="panel-title"> Create New Event </h3>
+                        <h3 class="panel-title"> Create Voucher</h3>
                         <div class="panel-body">
                         <form role="form">
                             <fieldset>
                                
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Event Name" name="event_name" type="text" id="event_name">
+                            <span>Voucher Details</span>
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="Voucher Name" name="voucher_name" id="voucher_name"type="text">
                                 </div>
                                      <div class="form-group">
-                                    <input class="form-control" placeholder="Event Description" name="event_description" id="event_description"type="text">
+                                    <input class="form-control" placeholder="Voucher Short Description" name="voucher_description" id="voucher_description"type="text">
                                 </div>
-                                     <div class="form-group">
-                                    <input class="form-control" placeholder="Event Location" name="event_location" id="event_location"type="text">
-                                </div>
+                                <Span>Voucher Validity</Span>
                                   <div class="form-group">
-                                    <input class="form-control" placeholder="Event Start Date" name="event_start" id="event_start" type="date">
+                                    <input class="form-control" placeholder="Start Date" name="voucher_start" id="voucher_start" type="date">
                                 </div>
                                           <div class="form-group">
-                                    <input class="form-control" placeholder="Event End Date" name="event_end" id="event_end" type="date">
+                                    <input class="form-control" placeholder="End Date" name="voucher_end" id="voucher_end" type="date">
                                 </div>
+                                <span>Redemption Conditions</span>
+                                      <div class="form-group">
+                                    <input class="form-control" placeholder="Voucher Grate Points" name="voucher_points" id="voucher_points"type="text">
+                                </div>
+                                <span>Voucher Image</span>
+                                
                                               <div class="form-group">
-                                                  <span>Event Image</span>
+                                                  <span>Voucher Image</span>
                                     <input class="form-control" placeholder="Event Image" name="event_image" id="event_image" type="file">
                                 </div>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="#/event_add" ng-click="SetPage('event_add')" class="btn btn-lg btn-success btn-block">Add Event</a>
+                                <a href="#/voucher" ng-click="SetPage('voucher_add')" class="btn btn-lg btn-success btn-block">Add Voucher</a>
                             </fieldset>
                         </form>
                        </div>

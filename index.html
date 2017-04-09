@@ -57,25 +57,46 @@
           
       </div>
     </div>
+      <!--/.common pages -->
     <div ng-include="'views/home.html'" ng-show="page=='home'"></div>
     <div ng-include="'views/login.html'" ng-show="page=='login'"></div>
     <div ng-include="'views/register.html'" ng-show="page=='register'"></div> 
     <div ng-include="'views/pre_authentification.html'" ng-show="page=='pre_authentification'"></div>  
      <div ng-include="'views/dashboard.html'" ng-show="page=='dashboard'"></div>  
     <div ng-include="'views/profile.html'" ng-show="page=='profile'"></div>  
+             <div ng-include="'views/account.html'" ng-show="page=='account'"></div> 
+           <div ng-include="'views/pay.html'" ng-show="page=='pay'"></div> 
+            <!--/.restuarants-->
        <div ng-include="'views/restaurant/restaurants.html'" ng-show="page=='restaurant'"></div>
        <div ng-include="'views/restaurant/restaurant_claim.html'" ng-show="page=='claim_restaurant'"></div>   
       <div ng-include="'views/restaurant/restaurant_edit.html'" ng-show="page=='edit_restaurant'"></div> 
+       <!--/.dishes-->
+      <div ng-include="'views/dishes_ratings/menuandratings.html'" ng-show="page=='menu_ratings'"></div> 
+         <div ng-include="'views/dishes_ratings/grate_ratings.html'" ng-show="page=='grate_ratings'"></div> 
+        <div ng-include="'views/dishes_ratings/view_restaurant_menu.html'" ng-show="page=='view_menu'"></div> 
+       <div ng-include="'views/dishes_ratings/editrestaurant_menu.html'" ng-show="page=='grate'"></div> 
+            <!--/.events-->
           <div ng-include="'views/events/events.html'" ng-show="page=='events'"></div> 
-      <div ng-include="'views/campaigns/campaigns.html'" ng-show="page=='campaigns'"></div> 
+            <!--/.campaings-->
+      <div ng-include="'views/campaigns/campaigns.html'" ng-show="page=='campaigns'"></div>
          <div ng-include="'views/campaigns/smscampaigns.html'" ng-show="page=='sms_campaign'"></div> 
          <div ng-include="'views/campaigns/emailcampaigns.html'" ng-show="page=='email_campaign'"></div> 
          <div ng-include="'views/campaigns/inappcampaigns.html'" ng-show="page=='inapp_campaigns'"></div> 
          <div ng-include="'views/campaigns/pushcampaigns.html'" ng-show="page=='push_campaigns'"></div> 
-      <div ng-include="'views/pay.html'" ng-show="page=='pay'"></div> 
-       <div ng-include="'views/featured/featured.html'" ng-show="page=='featured'"></div> 
-       <div ng-include="'views/account.html'" ng-show="page=='account'"></div> 
       
+ 
+          <!--/.featured dishes-->
+       <div ng-include="'views/featured/featured.html'" ng-show="page=='featured'"></div> 
+
+          <!--/.vouchers and coupons-->
+        <div ng-include="'views/vouchers_coupons/couponsandvouchers.html'" ng-show="page=='coupons_vouchers'"></div>           
+      <div ng-include="'views/vouchers_coupons/vouchers.html'" ng-show="page=='vouchers'"></div> 
+      <div ng-include="'views/vouchers_coupons/search_vouchers.html'" ng-show="page=='search_vouchers'"></div>    
+      <div ng-include="'views/vouchers_coupons/vouchers_add.html'" ng-show="page=='voucher_add'"></div>  
+      
+        <div ng-include="'views/vouchers_coupons/coupons.html'" ng-show="page=='coupons'"></div> 
+      <div ng-include="'views/vouchers_coupons/search_coupons.html'" ng-show="page=='search_coupons'"></div>    
+      <div ng-include="'views/vouchers_coupons/coupon_add.html'" ng-show="page=='coupon_add'"></div>    
       
       
 

@@ -517,6 +517,9 @@ body {
     width : 100px;
 
 }
+.verticalLine{
+    border-left: thick solid #ff0000;
+}
 .navigation-items a:hover {
     background-color : #222;
 }
