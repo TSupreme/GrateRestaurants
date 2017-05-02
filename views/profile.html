@@ -12,9 +12,11 @@
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
               
-               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+           <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
               <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
-                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>    
           </ul>
         </div><!--/.nav-collapse -->
           
@@ -32,7 +34,7 @@
                                 <div class="form-group">
                                         <span>Restaurant Name</span>
                                          <div class="form-control">
-                                           <output type="text" class="form-control" name="restaarant_name" id="restaurant_name"> 
+                                           <output type="text"  name="restaarant_name" id="restaurant_name"> 
                                         </div>
                                     
                                              
@@ -43,7 +45,7 @@
                                                     
                                     
                                 </div>
-                                               <a href="#/restaurant" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">Edit</a>         
+                                               <a href="#/restaurant" ng-click="SetPage('')" class="btn btn-link">Edit</a>         
                                 </fieldset>        
                               
                            </form>   
@@ -88,7 +90,7 @@
                             </div>
                         
                         
-                <div class="col-md-12"> 
+                <div class="col-md-6"> 
                 <div class="login-panel panel panel-default">
                  <div class="panel-heading">
                         <h3 class="panel-title"> Reservations</h3>
@@ -114,7 +116,7 @@
                                     <input class="form-control" placeholder="Reservations Phone Number" name="reservations_number" id="reservations_number"type="text">
                                 </div>
                                 
-                                    <a href="#/reservations" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">View Reservations</a>
+                                    <a href="#/reservations" ng-click="SetPage('')" class="btn btn-link">View Reservations</a>
                          
                            
                             </fieldset>
@@ -136,7 +138,7 @@
                                                      <div class="form-group">
                                                         <output  name="claimed_coupons" id="claimed_coupons"type="number">
                                                     </div>
-                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">Claimed Coupons</a>
+                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-link">Claimed Coupons</a>
                                                 </fieldset>
                                             </form>
                                            </div>
@@ -156,7 +158,7 @@
                                                      <div class="form-group">
                                                         <output  name="claimed_vouchers" id="claimed_vouchers"type="number">
                                                     </div>
-                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">Claimed vouchers</a>
+                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-link">Claimed vouchers</a>
                                                 </fieldset>
                                             </form>
                                            </div>

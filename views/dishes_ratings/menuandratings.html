@@ -12,9 +12,11 @@
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
               
-              <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
-             <li><a href="#/account " class="glyphicon glyphicon-user" ng-click="SetPage('account')">  ACCOUNT</a></li> 
-          
+           <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>   
   
           </ul>
         </div><!--/.nav-collapse -->
@@ -22,8 +24,14 @@
       </div>
     </div>
 <div class="container_login">
+    <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Here you can view all the your restaurants Gratings and edit your menu
+                        </div>
    
-    <h4>Here you can view all the your restaurants Gratings and edit your menu</h4>
+
         <div class="row">
             <div class="col-lg-3">   <!--sms campaign-->
              <div class="panel panel-default">
@@ -36,7 +44,8 @@
                               <p>A Grating is when a customers rates your food on the Grate App</p>
                                 <div class="form-group">
                                   
-                                 <img src="assets/img/test.jpg" alt="SMS" style="width:200px;height:200px;">
+                                 <img src="assets/img/grate.png" alt="SMS" style="width:200px;height:200px;">
+                                    <br>
                                     <br>
                                       
                                     <a href="#/grate" ng-click="SetPage('grate_ratings')" class="btn btn-primary">View</a>
@@ -68,7 +77,7 @@
                               <p>Here you can update your menu and upload menu items that will get shown on the Grate App</p>
                                 <div class="form-group">
                                   
-                                 <img src="assets/img/test.jpg" alt="Email" style="width:200px;height:200px;">
+                                 <img src="assets/img/menu.png" alt="Email" style="width:200px;height:200px;">
                                     <br>
                                       <a href="#/Dishes" ng-click="SetPage('view_menu')" class="btn btn-primary">Start</a>                            
                                 </div>
@@ -83,9 +92,11 @@
             </div>
         </div> 
                 
-         
+                </div>
+            </div>
+                        </div>
             
-
+                </div>
 
  </div>
  
