@@ -1,0 +1,77 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+                <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
+          
+  
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+    </div>
+
+<div class="container_login"> 
+      <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Here you can Enter your wines
+                        </div>
+     <div class="row">
+            <div class="col-md-4">
+            
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Enter Featured Wine details</h3>
+                   
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                              <spa>Details</spa>
+                                <div class="form-group">
+                                  <div class="form-group">
+                                    <input class="form-control" placeholder="Wine Name" name="wine_name" type="text" id="wine_name">
+                                </div>
+                                      <div class="form-group">
+                                    <input class="form-control" placeholder="Wine Type" name="wine_type" id="wine_type"type="text">
+                                </div>
+                                    
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="Wine Description" name="wine_description" id="wine_description"type="text">
+                                </div>
+          
+                                    <span>Upload Wine image</span>
+                                            <div class="form-group">
+                                    <input class="form-control" placeholder="Wine Image" name="wine_image" id="wine_image"type="file">
+                                </div>
+                                    <span>How much does it cost you</span>
+                                      <div class="form-group">
+                                    <outut class="form-control" placeholder="wine Cost" name="wine_cost" id="wine_cost"type="text">
+                                </div> 
+                                    
+                                       
+                                   <a href="#/wine_add" ng-click="SetPage('wine_add')" class="btn btn-lg btn-success btn-block">Add wine</a>
+                              
+                                </div>
+                           </form>      
+                        </div>
+                    </div>
+            </div>
+            </div>
+    </div>
+                        </div>
+                    </div>
+          </div>

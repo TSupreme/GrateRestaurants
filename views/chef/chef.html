@@ -1,0 +1,98 @@
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+                <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
+          
+  
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+    </div>
+<div class="container_login">
+       <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Here you can view an hire chefs
+                        </div>
+ 
+        <div class="row">
+            <div class="col-md-4 ">
+            
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> View Current Chefs</h3>
+                   
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                              
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="chef name" name="chef name" type="text" id="chef_name" autofocus>
+                                            <label>Status</label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">Is Available?
+                                            </label>
+                                    
+                                       
+                                  
+                                     <a href="#/events_viewmore.html" ng-click="SetPage('view_more')" class="btn btn-primary">Search</a>
+                                    
+                              
+                                </div>
+                           </form>      
+                        </div>
+                    </div>
+            </div>
+                        
+            <div class="col-md-4 col-md-offset-1 "> 
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Register as New Chef</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                               
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Chef Name" name="chef_name" type="text" id="chef_name">
+                                </div>
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="Chef Description" name="chef_description" id="chef_description"type="text">
+                                </div>
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="ChefLocation" name="chef_location" id="chef_location"type="text">
+                                </div>
+                                
+                
+                                              <div class="form-group">
+                                                  <span>Chef Resume</span>
+                                    <input class="form-control" placeholder="Chef Resume" name="chef_resume" id="chef_resume" type="file">
+                                </div>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="#/chef_add" ng-click="SetPage('chef_add')" class="btn btn-lg btn-success btn-block">Add Chef</a>
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+            </div>
+        </div>
+ </div>
+    </div>
+           </div>
+    </div>
+</div>
