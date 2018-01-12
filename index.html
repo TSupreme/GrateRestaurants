@@ -17,8 +17,27 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    $(".scroll").click(function(event){		
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                    });
+                });
+    </script>
+    <!-- //end-smoth-scrolling -->
 
-
+      <!-- animated-css -->
+		<link href="assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="assets/js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+    
+      <!-- animated-css --> 
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -105,6 +124,9 @@
     <div ng-include="'views/chef/chef.html'" ng-show="page=='chef'"></div> 
         <!--/. wines-->
     <div ng-include="'views/wine/wine.html'" ng-show="page=='wine'"></div> 
+       <!--/. dashboard-->
+    <div ng-include="'views/resDash.html'" ng-show="page=='resDash'"></div> 
+    
 
       
 
@@ -162,6 +184,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="scripts/grateapp.js"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
       
 
   </body>
